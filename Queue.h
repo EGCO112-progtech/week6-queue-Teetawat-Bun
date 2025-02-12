@@ -8,7 +8,7 @@ typedef struct {
 
 void enqueue_struct(Queue* q, int x){
   Node *new_node=(Node*) malloc(sizeof(Node));
-  q->headPtr = x;
+  q->headPtr = NULL;
   q->tailPtr = NULL;
   if (q->size == 0) {
         q->headPtr = new_node;
