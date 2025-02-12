@@ -8,12 +8,12 @@
 int main(int argc , char **argv) {
   NodePtr headPtr=NULL;
    NodePtr tailPtr=NULL;
-/* For struct Queue
+
   Queue  q;
    q. headPtr=NULL;
    q.tailPtr=NULL;
    q.size=0;
-*/
+
    int i,x;
    
 
