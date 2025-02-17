@@ -24,18 +24,21 @@ void enqueue_struct(Queue* q, int x){
 
 
 int dequeue_struct(Queue *q){
+  int value;
   if(q->size>0){
     NodePtr t = q->headPtr;
+    value = t->data;
     q->headPtr = q->headPtr->nextPtr;
         if (q->size == 1) {
             q->tailPtr = NULL;
         }
     free(t);
     q->size--;
+    return (value);
   }
-  else{
-    printf("Empty queue\n");
+
+  printf("Empty queue\n");
   return 0;
-  }
+  
 }
 
