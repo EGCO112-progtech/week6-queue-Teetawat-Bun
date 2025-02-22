@@ -40,7 +40,7 @@ int dequeue(NodePtr* head, NodePtr* tail){
    /* Finish dequeue*/   
    return value;
    }
-   printf("Empty queue");
+   printf("Empty queue\n");
    return 0;
 }
 
